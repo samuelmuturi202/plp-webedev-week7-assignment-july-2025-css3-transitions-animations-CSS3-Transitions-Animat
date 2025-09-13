@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bringing Web Pages to Life</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Interactive Web Experience</h1>
+            <p>Combining CSS3 Animations & JavaScript Functions</p>
+        </header>
+
+        <!-- Part 1: CSS Transitions and Animations -->
+        <section class="part1">
+            <h2>Part 1: CSS3 Transitions and Animations</h2>
+            
+            <!-- Button Hover Effect -->
+            <div class="button-container">
+                <button id="hoverButton" class="animated-button">Hover Over Me!</button>
+                <p class="description">Watch the button animate on hover with CSS transitions</p>
+            </div>
+
+            <!-- Continuous Animation -->
+            <div class="animation-container">
+                <div id="continuousBox" class="continuous-animation"></div>
+                <p class="description">This box rotates continuously using @keyframes animation</p>
+            </div>
+
+            <!-- Fade In/Out Elements -->
+            <div class="fade-container">
+                <div id="fadeElement" class="fade-element">Fade In/Out Element</div>
+                <button id="toggleFade" class="animated-button">Toggle Fade</button>
+                <p class="description">The element fades in and out with CSS transitions</p>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions -->
+        <section class="part2">
+            <h2>Part 2: JavaScript Functions - Scope, Parameters & Return Values</h2>
+            
+            <!-- Counter Function -->
+            <div class="function-container">
+                <h3>Counter Function (Demonstrating scope)</h3>
+                <p>Current Count: <span id="counterValue">0</span></p>
+                <button id="incrementBtn" class="animated-button">Increment Counter</button>
+                <button id="resetBtn" class="animated-button">Reset Counter</button>
+                <p class="description">These functions use local scope and return values</p>
+            </div>
+
+            <!-- Color Generator -->
+            <div class="function-container">
+                <h3>Color Generator Function</h3>
+                <div id="colorBox" class="color-box"></div>
+                <button id="changeColorBtn" class="animated-button">Change Color</button>
+                <p class="description">Function generates random colors and returns them</p>
+            </div>
+
+            <!-- Calculator Function -->
+            <div class="function-container">
+                <h3>Calculator Function</h3>
+                <input type="number" id="num1" placeholder="Enter first number" value="10">
+                <input type="number" id="num2" placeholder="Enter second number" value="5">
+                <select id="operation">
+                    <option value="add">Add</option>
+                    <option value="subtract">Subtract</option>
+                    <option value="multiply">Multiply</option>
+                    <option value="divide">Divide</option>
+                </select>
+                <button id="calculateBtn" class="animated-button">Calculate</button>
+                <p id="calcResult" class="result">Result: </p>
+                <p class="description">Functions with parameters and return values for calculations</p>
+            </div>
+        </section>
+
+        <!-- Part 3: Combining CSS Animations with JavaScript -->
+        <section class="part3">
+            <h2>Part 3: Combining CSS Animations with JavaScript</h2>
+            
+            <!-- Card Flip Animation -->
+            <div class="card-container">
+                <div id="flipCard" class="card">
+                    <div class="card-face front">
+                        <h3>Card Front</h3>
+                        <p>Click to flip</p>
+                    </div>
+                    <div class="card-face back">
+                        <h3>Card Back</h3>
+                        <p>JavaScript triggered flip animation</p>
+                    </div>
+                </div>
+                <button id="flipBtn" class="animated-button">Flip Card</button>
+                <p class="description">JavaScript triggers CSS flip animation</p>
+            </div>
+
+            <!-- Modal Popup -->
+            <div class="modal-container">
+                <button id="openModalBtn" class="animated-button">Open Modal</button>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Animated Modal</h3>
+                        <p>This modal slides in and fades out using JavaScript-triggered CSS animations.</p>
+                        <button id="closeModalBtn" class="animated-button">Close Modal</button>
+                    </div>
+                </div>
+                <p class="description">JavaScript controls modal slide-in/out animation</p>
+            </div>
+
+            <!-- Loading Animation -->
+            <div class="loading-container">
+                <div id="loadingIndicator" class="loading-indicator"></div>
+                <button id="startLoadingBtn" class="animated-button">Start Loading</button>
+                <button id="stopLoadingBtn" class="animated-button">Stop Loading</button>
+                <p class="description">JavaScript starts/stops loading animation</p>
+            </div>
+        </section>
+
+        <!-- Status Display -->
+        <section class="status">
+            <h2>Activity Log</h2>
+            <div id="log" class="log-container">
+                <p>System initialized. Ready for interaction.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
